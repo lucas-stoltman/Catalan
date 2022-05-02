@@ -9,12 +9,11 @@ def catalan(num: int):
     if num <= 1:
         return 1
 
-    # memoization
+    # memoization to save time
     memory = [0 for i in range(num + 1)]
 
     # set the first two values from the base case
-    memory[0] = 1
-    memory[1] = 1
+    memory[0] = memory[1] = 1
 
     for i in range(2, num + 1):
         memory[i] = 0
