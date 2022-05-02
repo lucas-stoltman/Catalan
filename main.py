@@ -6,4 +6,10 @@
 
 from catalan import catalan
 
-print(catalan(5))
+print("-------Testing-------")
+for i in range(10):
+    print(f"n({i}) : {catalan(i)}")
+
+print("\n-------Negative-------")
+for i in range(-9, 0):
+    print(f"n({i}) : {catalan(i)}")
