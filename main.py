@@ -6,3 +6,4 @@
 
 from catalan import catalan
 
+print(catalan(5))
