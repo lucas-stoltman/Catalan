@@ -21,6 +21,8 @@ def catalan(num: int):
     return result
 
 
+# ------------------------------------------------
+
 argument = int(sys.argv[1])
 
 print(catalan(argument))
