@@ -22,7 +22,13 @@ def catalan(num: int):
 
 
 # ------------------------------------------------
+argument = 0
 
-argument = int(sys.argv[1])
+try:
+    argument = int(sys.argv[1])
+    print(catalan(argument))
 
-print(catalan(argument))
+except ValueError:
+    print('This is not a number.')
+
+
